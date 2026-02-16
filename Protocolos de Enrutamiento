@@ -1,1 +1,33 @@
+Funciones de los protocolos de enrutamiento dinámico
+  - Compartir información de forma dinámica entre routers.
+  - Actualizar las tablas de enrutamiento de forma automática
+    cuando cambia la topología.
+  - Determinar cuál es la mejor ruta a un destino. 
+
+Objetivo de los protocolos de enrutamiento dinámico 
+  - Descubrir redes remotas.
+  - Mantener la información actualizada.
+  - Selecionar la mejor ruta a la redes de destino.
+  - Encontrar una nueva mejor ruta si la actual deja de estar disponible.
+
+Componentes de los protocolos de enrutamiento dinámico 
+  - Algoritmo : Se usan para facilitar información de enrutamiento y determinar la mejor ruta.
+  - Mensajes de los protocolos de enrutamiento : Se utilizan para descubrir routers vecinos e intarcambiar información de enrutmiento.
+
+Ventajas de enrutamiento estático 
+  - Facil de configurar, no nescesitaban recursos adicionales,es más seguro.
+Desventajas de enrutamiento etático
+  - Los cambios en la red requieren reconfiguraciones manuales,no permite una escabiliadad eficaz en topologias grandes.
+
+Clasificación de protocolos de enrutamiento 
+  - Los protocolos de enrutamiento dinámico se agrupan segun sus características.Ej:RIP,IGRP,EIGRP,OSPF,IS-IS,BGP.
+  - Un sistema autónomo es un grupo de routers que funcionan por una autoridad unica es decir por un router principal.
+
+Tipos de protocolos de enrutamiento
+  - Protocolos de gateway interiores (IGP):se usan para el enrutamiento dentro de un sistema autónomo y dentro de redes individuales.Ej:RIP,EIGP,OSPF.
+  - Protocolos de gateway exterior (EGP) : se usan para el enrutamiento entre sistemas autónomos.Ej:BGPv4.
+
+IGP 
+-
+
 
