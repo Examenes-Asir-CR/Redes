@@ -28,6 +28,10 @@ Tipos de protocolos de enrutamiento
   - Protocolos de gateway exterior (EGP) : se usan para el enrutamiento entre sistemas autónomos.Ej:BGPv4.
 
 IGP 
--
+- Comparación de vectores de distancia con los de estado de enlace.
+- Vector de distancia : las rutas se anuncian como vectores de distancia y dirección,da una vista imcompleta de la topología de red,se realizan actualizaciones periódicas.
+- Estado de enlace : se crea una visita completa de la topología de red,se realixan cambios cuando hay un cambio.
+
+
 
 
