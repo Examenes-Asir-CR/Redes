@@ -48,6 +48,13 @@ Metricas que se usa para cada protocolo de enrutamiento
   - IGRP y EIGRP : ancho de banda,retraso,carga,confiabilidad.
   - IS-IS y Ospf : ancho de banda.
 
+Balance de carga
+  - Es la capacidad de un router de distribuir paquetes entre varias rutas de igual métrica.
+  - Objetivo de una métrica : Se usa para determinar la mejor ruta a un destino.
+  - Objetivo de la Distancia Administrativa : Especifica la preferencia por una ruta determinada.Elije primero las rutas con menor distancia administrativa.
+
+
+
 
 
 
