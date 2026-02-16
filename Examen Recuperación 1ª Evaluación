@@ -1,0 +1,26 @@
+1. Transforma los siguientes números a la base que se indica.
+  -(1100110110)2(16),(416)10(16),(6242)8(2),(1101011)2(10),(AC5E)16(2).
+
+2. ¿Cual es la función principal de un servidor dns?
+  - La función principal del DNS es la resolución de nombres. Básicamente, traduce los nombres de dominio que nosotros entendemos (como google.com) a las direcciones IP que las computadoras utilizan (como 142.250.190.46).
+3. ¿Cual es la función principal de un servidor dhcp?
+  - La función principal del DHCP es la asignación automática de direcciones IP y otros parámetros de red a los dispositivos de una red.
+4. ¿Que topología de red debes usar si quieres la mayor tolerancia a fallos posibles?
+  -La topologia de red en malla.
+5. Rellena las siguintes tablas.
+  ip:10.130.64.130 Mascara de red: 255.255.1992.0 / Dirección de red,Máscara,1ª ip asignable,Ultima ip asignable,Broadcast,Número de Hosts.
+  ip:192.168.130.109 Mascara de red: 255.255.255.224 / Dirección de red,Máscara,1ª ip asignable,Ultima ip asignable,Broadcast,Número de Hosts.
+
+6.¿Es correcto asignar a un equipo de mi red la ip 10.130.1.128/25?.Justifica tu respuesta.
+En la red que has definido ($10.130.1.128/25$), la dirección .128 es la dirección de red (Network ID), por lo que no se puede asignar a un equipo final (como una computadora o un servidor).
+
+7.
+
+
+
+
+
+8.Identifica el número de redes del diagrama de la figura.Rodea en la imagen cada red.
+  - Número de redes 7.
+9.
+10.
