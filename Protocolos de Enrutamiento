@@ -32,6 +32,22 @@ IGP
 - Vector de distancia : las rutas se anuncian como vectores de distancia y dirección,da una vista imcompleta de la topología de red,se realizan actualizaciones periódicas.
 - Estado de enlace : se crea una visita completa de la topología de red,se realixan cambios cuando hay un cambio.
 
+Clasificación de los protocolos Classful y Classless 
+  - Protocolo de enrutamiento classful : no envía la máscara de subred durante las actualizaciones de enrutamiento, utiliza la máscara de la clase.
+  - Protocolo de enrutamiento classless : envía la máscara de subred durante las actualizaciones de enrutamiento.
+
+La convergencia 
+  - Se define como el estado en el que las tablas de enrutamiento de todos los routers son estables.
+
+Métricas de los protocolos de enrutamiento
+  - Métrica: es un valor que usan los protocolos de enrutamiento para determinar que rutas son mejores que otras.
+  - Métricas utilizadas en los protocolos de enrutamiento:Ancho de anda,Retraso,Conteo de saltos,Carga,Confiabilidad.
+
+Metricas que se usa para cada protocolo de enrutamiento
+  - RIP: conteo de saltos.
+  - IGRP y EIGRP : ancho de banda,retraso,carga,confiabilidad.
+  - IS-IS y Ospf : ancho de banda.
+
 
 
 
