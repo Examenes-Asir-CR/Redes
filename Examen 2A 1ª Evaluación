@@ -1,1 +1,32 @@
+1.Contesta a las siguientes preguntas tipo test.
+ - ¿Cuál es la PDU de la Capa 2? a)
+  a) Trama b)Segmento c)Paquete d)Bits
+ - Los puertos Access d)
+  a) Deben tenber al menos una Vlan nativa b) Interconectan dos switches c) Permiten tranposrtas varias Vlan d) Ningina es correcta
+- ¿Cual es la PDU de la Capa 4 cuando se usa Tcp? c)
+  a) Trama b) Paquete c) Segmento d) Ninguna es correcta.
+- ¿Cual es la PDU de la capa 3? b)
+  a) Trama b) Paquete c) Segmento d) Ninguna es correcta.
+- ¿Cual de las siguientes afirmaciones es correcta? f)
+  e) Los puertos trunk no permiten múltiples vlan tagged f) los puertos trunk permiten múltiples vlan tagged g) los puertos trunk permiten múltiples vlan untagged h) ninguna de las anteriores es correcta.
+- ¿Cual de las siguintes afirmaciones es correcta? d)
+  a) Los puertos trunk permiten multiples vlan untagged b) Los puertos acces sólo admite una vlan untagged c)Los puertos access permiten múltiples vlan untagged d) Ninguna es correcta.
+
+2. ¿Cuantos dominios de colisión y broadcast tienen las siguientes imagenes.
+  Imagen 1: Dos Switch ,Dominios de colisión : 2 , Dominios de Broadcast : 2.
+  Imagen 2: Un hub y un switch , Dominio de Colisión 2 , Dominios de Broadccast :2.
+
+3. Explica ques es el concepto de multiplexación y pon un ejemplo:
+  - La multiplexación forma parte de la capa de transporte, y permite enviar múltiples datos de forma alterna por un solo canal.Ej: Queremos enviar varios segmentos,los enviamos pr un único canal de comunicaón sin que la velocidad se vea afectada.
+
+4. ¿Qué problema tenemos si una red tiene mucho tráfico de broadcast?¿Cómo podemos solucionarlo?
+  -Que la red se acabará saturando poque los hosts escuchan tráfico que realmente no necesitan.Se puede solucionar,por ejemplo su tu le pones una vlan,se reducirá el nivel de datos que procesa cada host.
+
+5- Rellena las siguientes tablas de modelo Osi.
+ -Capa 2 :Funciones,Dispositivos,Protocolos.
+ -Capa 3 :Funciones,Dispositivos,Protocolos.
+ -Capa 4 :Funciones,Dispositivos,Protocolos.
+ -Capa 7 :Funciones,Dispositivos,Protocolos.
+
+6- En la captura de wireshark 
 
