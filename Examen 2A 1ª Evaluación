@@ -28,5 +28,9 @@
  -Capa 4 :Funciones,Dispositivos,Protocolos.
  -Capa 7 :Funciones,Dispositivos,Protocolos.
 
-6- En la captura de wireshark 
+6- En la captura de wireshark ¿qué protocolo está encapsulado den la capa 2 explica qué información vemos en esta capa y marca en la captura donde ves esa información?
+ -Podemos ver que se está usando el protocolo Ethernet, que es de la capa 2 de enlace de datos, estamos viendo que le está dando una dirección mac source(origen) y ka mac del destino.
+
+7- Escribe los comandos necesarios para configurar el escenario de red que se establece en la imagen.Crear las Vlan,nombarlas y establecer la Vlan 50 como nativa.Debe configurarse para que exista comunicación entre toda las Vlan.
+
 
