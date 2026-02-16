@@ -59,6 +59,36 @@ Distancia Administrativa de una ruta
   - Rutas estáticas : Tienen un valor por defecto de 1.
 
 
+-Resumen esquemático-
+
+Los protocolos de enrutamiento dinámico tienen las siguientes funciones:
+• Comparten información de forma dinámica entre routers.
+• Actualizan las tablas de enrutamiento de forma automática cuando
+cambia la topología.
+• Determinan cuál es la mejor ruta a un destino
+
+• Los protocolos de enrutamiento se agrupan en:
+• - Protocolos de gateway interiores (IGP)
+• - Protocolos de gateway exterior (EGP)
+
+• Los tipos de IGP incluyen:
+• Protocolos de enrutamiento classless: incluyen la máscara de subred
+durante las actualizaciones de enrutamiento.
+• Protocolos de enrutamiento classful: no incluyen la máscara
+de subred durante las actualizaciones de enrutamiento.
+
+Los protocolos de enrutamiento dinámico usan las métricas para
+determinar la mejor ruta a un destino.
+• La distancia administrativa es un valor entero que se usa para
+indicar la confiabilidad de la ruta de un router.
+• Entre los componentes de una tabla de enrutamiento, se
+encuentran:
+• Destino de la ruta
+• Distancia administrativa
+• Métrica
+
+
+
 
 
 
