@@ -24,6 +24,17 @@ CONFIGURACIÓN BASICA DE RIPV1
 
 Verificación y resolución de problemas 
   -Para verificar y resolver problemas de enrutamiento usamos los siguientes comandos: show ip router,debug ip rip,no debug ip rip(desactivar el debug),show ip protocols.
+  -El comando Debug ip rip:Muestra las actualizaciones de enrutamiento RIP a medida que ocurren.
+  -El comando show ip protocols: Muestra el portocolo de enrutamiento configurado en el router.
+
+Interfaces Pasivas
+Evita que el router envíe actualizaciones a través de una interfaz Router(config-router)#passive-interface interface-type interface-number.
+
+Para quitar el proceso de enrutamiento RIP,use el siguiente comando:no router rip.
+Para verificar la configuración, use el siguiente comando:Show run.
+
+Sumarización automática
+
 
 
 
