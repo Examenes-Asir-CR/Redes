@@ -1,0 +1,19 @@
+Rip v1 Características
+  -Protocolo de enrutamiento de vector de distancia(DV).
+  -Es Classful.No soporta VLSM.
+  -Métrica = conteo de saltos.
+  -Las rutas con un conteo de saltos superiores a 15 no se pueden alcanzar.
+  -Se envia un broadcast de las actualizaciones cada 30 segundos.
+
+Formato de mensaje RIP 
+  -Encabezado RIP:Campo de comando y campo de version.
+  -Entrada de ruta:Dirección IP y Métrica.
+
+Funcionamiento de RIP 
+Rip es un protocolo de enrutamiento classful,no envía las máscaras de subred durante las actualizaciones de enrutamiento.
+Rip usa 2 tipos de mensajes:
+  -Mensaje de solicitud:Cada interfaz habilitada con RIP lo envía en el inicio.Solicita a todos los vecinos con RIP habilitado que envien tablas de enrutamiento.
+  -Mensaje de respuesta:Mensaje enviado al router solicitante con la tabla de enrutamiento.
+Las direcciones IP inicialmente se dividieron en clases:Clase a,b,c
+
+
