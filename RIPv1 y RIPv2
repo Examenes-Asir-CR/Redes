@@ -16,4 +16,14 @@ Rip usa 2 tipos de mensajes:
   -Mensaje de respuesta:Mensaje enviado al router solicitante con la tabla de enrutamiento.
 Las direcciones IP inicialmente se dividieron en clases:Clase a,b,c
 
+  -Distancia administrativa:Su distancia administrativa por defecto de RIP es 120.
+
+CONFIGURACIÓN BASICA DE RIPV1
+  -Comando router rip:Para habilitar rip escribe Router rip en el indicador de configuración global.El indicador será similar a R1(config-router)#
+  -Especificaiones de redes:Use el comando network para habilitar RIP en todas las interfaces que pertenecen a esta red.Publicar esta red en las actualizaciones de RIP que se envían a otros routers cada 30 segundos.
+
+Verificación y resolución de problemas 
+  -Para verificar y resolver problemas de enrutamiento usamos los siguientes comandos: show ip router,debug ip rip,no debug ip rip(desactivar el debug),show ip protocols.
+
+
 
