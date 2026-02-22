@@ -46,7 +46,80 @@ Para programar un ruta deterinada,el router perimetral debe ser configurado con 
   -Una ruta estática predeterminada mediante el comando ip route 0.0.0.0.0.0.0 interfaz-salida ip-siguiente-salto.
   -El comando de configuración del router default-information originate,este comando le ordena al router1 que propague la ruta estatica predeterminada en actualizaciones rip.
 
+-Resumen esquemático-
 
+Comandos utilizados por RIP
 
+Comando - Función del comando
 
+Rtr(config)#router rip Habilita el proceso de enrutamiento del protocolo RIP.
+Rtr(config-router)#network Asocia una red con un proceso de enrutamiento RIP.
+Rtr#debug ip rip Usado para ver el tiempo real en las actualizaciones de enrutamiento RIP.
+Rtr(config-router)#passive-interface fa0/0 Evita que las actualizaciones RIP salgan de una interfaz.
+Rtr(config-router)#default-information originate Usado por RIP para propagar las rutas por defecto.
+Rtr#show ip protocols Usado para mostrar los temporizadores que utiliza RIP.
 
+RIPv1
+
+• Las características de RIP incluyen:
+• Protocolo de enrutamiento de vector de distancia
+• Classful. No soporta VLSM ni las subredes no contiguas
+• La métrica es el conteo de saltos
+• Se actualiza cada 30 segundos
+• Los mensajes RIP se encapsulan en un segmento UDP con los
+puertos de origen y de destino establecidos en 520.
+
+Comparación entre RIPv1 y RIPv2
+
+ RIPv1
+• Protocolo de enrutamiento de vector de distancia
+• No proporciona soporte para subredes no contiguas
+• No proporciona soporte para VLSM
+• Classful. No envía las máscaras de subred durante las actualizaciones
+de enrutamiento
+• Se envían las actualizaciones de enrutamiento por medio de broadcasts
+
+ RIPv2
+-Protocolo de enrutamiento de vector de distancia
+-Classless, que es una mejora de las funciones de RIPv1
+-Se incluye la próxima dirección de salto en las actualizaciones
+-Las actualizaciones de enrutamiento se envían por medio de multicast
+
+Comparación entre formatos de mensajes de RIPv1 y RIPv2
+
+- El formato de mensajes de RIPv2 es similar al de RIPv1, pero tiene 2 extensiones:
+ La primera extensión es el campo de la máscara de subred
+ La segunda es la adición de la dirección del siguiente salto
+
+Configuración de RIPv2
+
+Configuración de RIPv2 en un router Cisco
+- Requiere el uso de un comando version 2
+- RIPv2 ignora las actualizaciones de RIPv1
+• Para verificar que RIPv2 esté configurado, utilice el comando show ip protocols
+
+Configuración de RIPv2
+•RIPv2 aplica de forma
+automática la sumarización de
+rutas.
+
+•Inhabilitación de sumarización
+automática en RIPv2
+• Para deshabilitar la sumarización
+automática, ejecute el comando
+no auto-summary
+
+Planificación y Administración de Redes-1oASIR
+
+• Cuando utiliza RIPv2 con la sumarización automática desactivada. Cada subred (y cada máscara) tiene sus propias entradas, junto con la interfaz de salida y la dirección del siguiente salto, para alcanzar la subred.
+
+VLSM
+Redes que utilizan un esquema de direccionamiento IP VLSM deben utilizar protocolos de enrutamiento classless (p. ej., RIPv2) para difundir direcciones de red y sus máscaras de subred
+
+Verificación y resolución de problemas de RIPv2
+
+•Comandos utilizados para verificar el funcionamiento correcto de RIPv2:
+–Show ip interfaces brief
+–Show ip protocols
+–Debug ip rip
+–Show ip route
