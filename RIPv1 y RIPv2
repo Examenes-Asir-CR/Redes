@@ -34,6 +34,18 @@ Para quitar el proceso de enrutamiento RIP,use el siguiente comando:no router ri
 Para verificar la configuración, use el siguiente comando:Show run.
 
 Sumarización automática
+En los routers de borde,RIP resume automaticamente las redes.
+  -Ventajas:Se reduce el tamaño de las actualizaciones de enrutamiento.Las rutas únicas se usan para representar varias rutas y eso genera busquedas mas rápidas en la tabla de enrutamiento.
+  -Desventajas:No soporta redes no contiguas.
+
+RIPv1 y ruta por defecto
+
+Los paquetes que no se definan epecíficamente en la tabla de enrutamiento se van a a la ruta de interfaz determinada de la ruta por defecto.EJ:Los routers clientes usan rutas por defecto para conectarse a un router ISP.
+
+Para programar un ruta deterinada,el router perimetral debe ser configurado con lo siguiente:
+  -Una ruta estática predeterminada mediante el comando ip route 0.0.0.0.0.0.0 interfaz-salida ip-siguiente-salto.
+  -El comando de configuración del router default-information originate,este comando le ordena al router1 que propague la ruta estatica predeterminada en actualizaciones rip.
+
 
 
 
